@@ -20,7 +20,7 @@ namespace SIADISC2.Persistencia
         }
 
         public bool byPk(object pkValue, object model)
-        {
+        {            
             Type ModelClass = model.GetType();
             Dictionary<string, object> data = this.byPk("id", pkValue, ModelClass.BaseType.Name.ToLower());
             //object model = Activator.CreateInstance(ModelClass);
@@ -39,6 +39,7 @@ namespace SIADISC2.Persistencia
 
         public Dictionary<string, object> byPk(string pkName, object pkValue, string table)
         {
+            this.connection.Open();
             MySqlCommand cmd = this.prepareQuery("SELECT * FROM " + this.scape(table) + " WHERE " + this.scape(pkName) + "={0} LIMIT 1", pkValue);
             MySqlDataReader reader = cmd.ExecuteReader();
             if (!reader.Read())
@@ -48,6 +49,7 @@ namespace SIADISC2.Persistencia
             {
                 data.Add(reader.GetName(i), reader.GetValue(i));
             }
+            this.connection.Close();
             return data;
         }
 

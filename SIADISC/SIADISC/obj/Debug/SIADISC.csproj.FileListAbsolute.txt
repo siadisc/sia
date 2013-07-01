@@ -29,5 +29,6 @@ C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC\bin\es\EntityFramework.res
 C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC\bin\es\System.Web.Optimization.resources.dll
 C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC\bin\es\System.Web.Providers.resources.dll
 C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC\bin\es\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC\obj\Debug\SIADISC.csprojResolveAssemblyReference.cache
 C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC\obj\Debug\SIADISC.dll
 C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC\obj\Debug\SIADISC.pdb

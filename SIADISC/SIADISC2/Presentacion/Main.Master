@@ -5,17 +5,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title><%=Title%></title>
+    <link type="text/css" rel="stylesheet" href="<%=ResolveUrl("~")%>Presentacion/resources/bootstrap/css/bootstrap.min.css" />        
+    <style type="text/css">
+        body
+        {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server">    
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                        </span>
+                    </button>
+                    <a class="brand" href="#">
+                        <%=Title%></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <%=((SIADISC2.Logica.Usuario)Session["usuario"]).Nombre%>
+                                <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Ver Perfil</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Salir</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+            </div>
+        </div>        
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
+    </asp:ContentPlaceHolder>    
     </form>
 </body>
 </html>

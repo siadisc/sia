@@ -12,7 +12,7 @@ namespace SIADISC
     public class Global : HttpApplication
     {
         void Application_Start(object sender, EventArgs e)
-        {
+        {            
             // Código que se ejecuta al iniciarse la aplicación
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();

@@ -38,5 +38,12 @@ namespace SIADISC2.Logica
             }
         }
 
+
+        public int Rut { get { return this.rut; } set { this.rut = Rut; } }
+        public string Nombre { get { return this.nombre; } set { this.nombre = Nombre; } }
+        public string PasswordHash { get { return this.passwordHash; } set { this.passwordHash = PasswordHash; } }
+        public string APaterno { get { return this.aPaterno; } set { this.aPaterno = APaterno; } }
+        public string AMaterno { get { return this.aMaterno; } set { this.aPaterno = AMaterno; } }
+        public int Rol { get { return this.rol; } set { this.rol = Rol; } }
     }
 }

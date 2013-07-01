@@ -1,1 +1,6 @@
+C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC2\bin\SIADISC2.dll
+C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC2\bin\SIADISC2.pdb
+C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC2\bin\MySql.Data.dll
+C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC2\obj\Debug\SIADISC2.dll
+C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC2\obj\Debug\SIADISC2.pdb
 C:\Users\rodrigo\Documents\GitHub\sia\SIADISC\SIADISC2\obj\Debug\SIADISC2.csprojResolveAssemblyReference.cache
